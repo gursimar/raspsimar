@@ -1,0 +1,8 @@
+play on rasppi option form pc
+- configure rasppi's ip from computer
+- stream the video fom pc command line (see evernote)
+- play the stream from rasp pi (pc ip known)
+- feature for android and ios
+
+
+
