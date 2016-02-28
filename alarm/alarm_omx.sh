@@ -6,13 +6,10 @@ tvservicepower >> ~/raspsimar/logalarm.log
 #tvservice -o
 #tvservice -p
 
-for file in ~/media/*.mp4
-	do
-		echo "Playing file $file" >> ~/raspsimar/logalarm.log
-		omxplayer "$file"
-		tvservicevolup
-		tvservicevolup
-	done
+omxplayer ~/media/kirtan/kirtan_na_mai_hindu_na_musalman.mp4
+
 date >> ~/raspsimar/logalarm.log
 echo "DONE" >> ~/raspsimar/logalarm.log
 echo "\r\n\r\n" >> ~/raspsimar/logalarm.log
+#this switch off does not work
+tvservicepower >> ~/raspsimar/logalarm.log
