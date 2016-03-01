@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>  
+
+    </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Bootstrap Tutorial</h1>      
+      <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+    </div>
+  
+    <div class="container-fluid">
+        <div>
+            <h1>Welcome to Flask - simar!</h2>
+            <br>
+            <p>Click <a href="/">here</a> to go home.</p>
+        </div>
+      <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <table class="table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>    
+    </div>
+    
+    <br><br>
+<div class="panel panel-default">
+  <div class="panel-heading">Panel Heading</div>
+  <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-success">First item</li>
+          <li class="list-group-item list-group-item-info">Second item</li>
+          <li class="list-group-item list-group-item-warning">Third item</li>
+          <li class="list-group-item list-group-item-danger">Fourth item</li>
+        </ul>    
+  </div>
+</div>    
+    <div>
+        <div class="page-header">
+            <h1>Bootstrap Sample Page with Form</h1>
+        </div>
+        <form action='http://demo.codeofaninja.com/tutorials/bootstrap-tutorial-for-beginners/' method='post'>
+         
+            <table class='table table-hover table-responsive table-bordered'>
+         
+                <tr>
+                    <td>Name</td>
+                    <td><input type='text' name='name' class='form-control' required></td>
+                </tr>
+         
+                <tr>
+                    <td>Contact Number</td>
+                    <td><input type='text' name='contact_number' class='form-control' required></td>
+                </tr>
+         
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name='address' class='form-control'></textarea></td>
+                </tr>
+         
+                <tr>
+                    <td>List</td>
+                    <td>
+                        <select name='list_id' class='form-control'>
+                            <option value='1'>List One</option>
+                            <option value='2'>List Two</option>
+                            <option value='3'>List Three</option>
+                        </select>
+                    </td>
+                </tr>
+         
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-plus"></span> Create New Record
+                        </button>                    
+                    </td>
+                </tr>
+         
+            </table>
+        </form>    
+    </div>
+  </body>
+</html>

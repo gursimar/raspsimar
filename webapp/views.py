@@ -9,3 +9,8 @@ def index():
 @app.route('/cakes')
 def cakes():
     return 'cakes'
+
+@app.route('/welcome')
+def welcome():
+	return render_template('welcome.html')
+
