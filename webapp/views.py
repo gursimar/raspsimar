@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from flask.ext.restless.manager import APIManager
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.sql.schema import Column
@@ -15,8 +17,25 @@ class Video(db.Model):
     image = Column(Text, unique=False)
 db.create_all()
 
+
+class Alarm(db.Model):
+    id = Column(db.Integer, primary_key=True)
+    name = Column(db.String(256))
+    message = Column(db.String(512))
+    status = Column(db.Boolean)
+    severity = Column(db.Integer)
+    days = Column (db.String)
+    time = Column (db.DateTime)
+    deadline = Column (db.DateTime)
+db.create_all()
+
+
+# Insert a alarm manually
+al = Alarm(id=101, name = "pompu", message= "pompu is great", status=1, severity = 1, days="monday", time=datetime.now(), deadline=datetime.now())
+
 api_manager = APIManager(app, flask_sqlalchemy_db=db)
 api_manager.create_api(Video, methods = ['GET', 'POST', 'DELETE', 'PUT'])
+api_manager.create_api(Alarm, methods = ['GET', 'POST', 'DELETE', 'PUT'])
 
 
 @app.route('/')
