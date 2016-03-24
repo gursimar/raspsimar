@@ -5,16 +5,15 @@
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
     <schema name="" catalog=""/>
     <table name="alarm" schema="" catalog="" type="TABLE">
-      <column name="id" sqlType="INT" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR(255)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="message" sqlType="VARCHAR(511)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-      <column name="status" sqlType="INT" precision="0" scale="-1" nullable="false" jdbcType="4" def="MQ=="/>
-      <column name="severity" sqlType="INT" precision="0" scale="-1" nullable="false" jdbcType="4" def="MQ=="/>
-      <column name="days" sqlType="VARCHAR(255)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="TEXT" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="message" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="status" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="severity" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="days" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
       <column name="time" sqlType="TEXT" precision="0" scale="-1" nullable="false" jdbcType="12"/>
       <column name="deadline" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
-      <index name="alarm_id_uindex" unique="true" columns="id"/>
     </table>
     <table name="video" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>

@@ -17,7 +17,6 @@ class Video(db.Model):
     image = Column(Text, unique=False)
 db.create_all()
 
-
 class Alarm(db.Model):
     id = Column(db.Integer, primary_key=True)
     name = Column(db.String(256))
