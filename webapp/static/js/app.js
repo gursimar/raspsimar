@@ -23,6 +23,11 @@ var app = angular.module("app", [
                 templateUrl:'alarm.html',
                 controller: 'alarmCtrl'
             })
+            .state('videos', {
+                url:'/videos',
+                templateUrl:'videos.html',
+                controller: 'videosCtrl'
+            })
     }])
 
 app.controller('AppCtrl', function($http, $scope) {

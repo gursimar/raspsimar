@@ -1,49 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simar angular exmaple</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simar angular exmaple</title>
+    </head>
 
-<div class="container" ng-app="app">
-    <header ng-include="'nav.html'"></header>
-    <div ui-view> </div>
-
-    <footer ng-include="'footer.html'"></footer>
-
-<br>
-<br>
-</div>
-</div>
-
-<!--
-<body ng-app="app" ng-controller="AppCtrl as app">
-    simar. your app goes here Hello burrah
-    <div ui-view>
-        {{app.message}}
-        <br>
-
-        <button ng-click="app.addVideo()"> Add Video </button>
-        <div ng-repeat="video in app.videos">
-            <img ng-src="video.image" alt=""/>
-            {{video.title}}
-            <div class="ui"></div>
-                <input type="text" ng-model = "video.title"/>
-                <button ng-click="app.deleteVideo(video)"> Delete Video </button>
-        </div>
+    <div class="container" ng-app="app">
+        <header ng-include="'nav.html'"></header>
+        <div ui-view> </div>
+        <footer ng-include="'footer.html'"></footer>
     </div>
-</body>
--->
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 
-<script src="js/app.js"></script>
-<script src="js/homeCtrl.js"></script>
-<script src="js/aboutCtrl.js"></script>
-<script src="js/alarmCtrl.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/aboutCtrl.js"></script>
+    <script src="js/alarmCtrl.js"></script>
+    <script src="js/videosCtrl.js"></script>
 
-<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 </html>
